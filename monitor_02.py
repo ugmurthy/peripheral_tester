@@ -13,11 +13,11 @@ from lib.my_logging import log_msg
 import lib.bluetooth_utils as UTILS
 import lib.bluetooth_constants as CONST
 import sys, signal
+import platform
 
 
 # GLOBALS
 VERSION = 'Peripheral Device Tester V0.4 4/Oct/2022'
-log_msg.info(VERSION)
 config = configparser.ConfigParser()
 connected = False
 services_resolved = False
@@ -26,6 +26,10 @@ wdt_timeout = 10
 addrs = []
 relevant_ifaces = ( CONST.ADAPTER_INTERFACE, CONST.DEVICE_INTERFACE )
 
+##
+log_msg.info(VERSION)
+log_msg.info(f"Platform: {platform.platform()}")
+log_msg.info(f"Python: {sys.version}")
 
 try:
     config.read("config.yaml")
