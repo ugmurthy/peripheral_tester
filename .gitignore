@@ -1,0 +1,8 @@
+lib/__pycache__/*
+log/*
+*.ipynb
+*.csv
+*.hex
+data/*
+test/*
+

@@ -1,0 +1,14 @@
+[SYSTEM]
+wdt_timeout = 10
+log_level = DEBUG
+detail = 1
+log_added = 1
+log_removed = 1
+wdt_delay = 10
+disconnect_delay = 0
+show_skipped_packets = 0
+not_of_interest = 0
+[DEVICES]
+ble1 : ['D0:5F:64:52:13:45','D0:5F:64:52:00:01']
+force_connect = 0
+
